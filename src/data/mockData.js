@@ -1,0 +1,226 @@
+// Mock data for the Client Portal
+export const mockUsers = [
+    {
+        id: 1,
+        name: 'Alex Morgan',
+        email: 'admin@portal.dev',
+        password: 'admin123',
+        role: 'admin',
+        avatar: null,
+        company: 'DevStudio',
+    },
+    {
+        id: 2,
+        name: 'Sarah Chen',
+        email: 'client@portal.dev',
+        password: 'client123',
+        role: 'client',
+        avatar: null,
+        company: 'TechVentures Inc.',
+    },
+];
+
+export const mockProjects = [
+    {
+        id: 1,
+        name: 'E-Commerce Platform',
+        clientId: 2,
+        clientName: 'Sarah Chen',
+        type: 'Web Application',
+        status: 'In Progress',
+        healthScore: 87,
+        completion: 68,
+        currentPhase: 'Development',
+        deadline: '2026-04-15',
+        startDate: '2026-01-10',
+        lastUpdate: '2026-03-06',
+        description: 'Full-stack e-commerce platform with payment integration, inventory management, and analytics dashboard.',
+        budget: 24000,
+        spent: 16320,
+        phases: [
+            { name: 'Planning', status: 'completed', completion: 100, notes: 'Requirements gathered, wireframes approved', startDate: '2026-01-10', endDate: '2026-01-24' },
+            { name: 'Design', status: 'completed', completion: 100, notes: 'UI/UX designs finalized, design system created', startDate: '2026-01-25', endDate: '2026-02-10' },
+            { name: 'Development', status: 'in-progress', completion: 65, notes: 'Frontend components built, API integration in progress', startDate: '2026-02-11', endDate: '2026-03-25' },
+            { name: 'Testing', status: 'pending', completion: 0, notes: 'Unit & integration tests planned', startDate: '2026-03-26', endDate: '2026-04-05' },
+            { name: 'Deployment', status: 'pending', completion: 0, notes: 'AWS deployment pipeline ready', startDate: '2026-04-06', endDate: '2026-04-15' },
+        ],
+    },
+    {
+        id: 2,
+        name: 'ML Recommendation Engine',
+        clientId: 2,
+        clientName: 'Sarah Chen',
+        type: 'Machine Learning',
+        status: 'In Progress',
+        healthScore: 92,
+        completion: 45,
+        currentPhase: 'Development',
+        deadline: '2026-05-20',
+        startDate: '2026-02-01',
+        lastUpdate: '2026-03-05',
+        description: 'Collaborative filtering recommendation system with real-time predictions and A/B testing framework.',
+        budget: 18000,
+        spent: 8100,
+        phases: [
+            { name: 'Planning', status: 'completed', completion: 100, notes: 'Data requirements defined, model architecture planned', startDate: '2026-02-01', endDate: '2026-02-14' },
+            { name: 'Design', status: 'completed', completion: 100, notes: 'System architecture, API contracts designed', startDate: '2026-02-15', endDate: '2026-02-28' },
+            { name: 'Development', status: 'in-progress', completion: 40, notes: 'Model training pipeline built, achieving 89% accuracy', startDate: '2026-03-01', endDate: '2026-04-20' },
+            { name: 'Testing', status: 'pending', completion: 0, notes: 'A/B testing framework planned', startDate: '2026-04-21', endDate: '2026-05-10' },
+            { name: 'Deployment', status: 'pending', completion: 0, notes: 'Kubernetes deployment planned', startDate: '2026-05-11', endDate: '2026-05-20' },
+        ],
+    },
+    {
+        id: 3,
+        name: 'Dashboard Analytics Tool',
+        clientId: 2,
+        clientName: 'Sarah Chen',
+        type: 'Software',
+        status: 'Completed',
+        healthScore: 100,
+        completion: 100,
+        currentPhase: 'Deployment',
+        deadline: '2026-02-28',
+        startDate: '2025-12-01',
+        lastUpdate: '2026-02-28',
+        description: 'Real-time analytics dashboard with custom widgets, data pipelines, and report generation.',
+        budget: 12000,
+        spent: 11400,
+        phases: [
+            { name: 'Planning', status: 'completed', completion: 100, notes: 'All requirements met', startDate: '2025-12-01', endDate: '2025-12-14' },
+            { name: 'Design', status: 'completed', completion: 100, notes: 'Final designs delivered', startDate: '2025-12-15', endDate: '2025-12-30' },
+            { name: 'Development', status: 'completed', completion: 100, notes: 'All features implemented', startDate: '2026-01-01', endDate: '2026-02-10' },
+            { name: 'Testing', status: 'completed', completion: 100, notes: 'All tests passing', startDate: '2026-02-11', endDate: '2026-02-22' },
+            { name: 'Deployment', status: 'completed', completion: 100, notes: 'Deployed to production', startDate: '2026-02-23', endDate: '2026-02-28' },
+        ],
+    },
+];
+
+export const mockTasks = [
+    { id: 1, projectId: 1, name: 'Setup project structure', status: 'completed', date: '2026-01-10' },
+    { id: 2, projectId: 1, name: 'Design database schema', status: 'completed', date: '2026-01-15' },
+    { id: 3, projectId: 1, name: 'Implement auth system', status: 'completed', date: '2026-01-22' },
+    { id: 4, projectId: 1, name: 'Build product catalog', status: 'completed', date: '2026-02-05' },
+    { id: 5, projectId: 1, name: 'Shopping cart functionality', status: 'completed', date: '2026-02-15' },
+    { id: 6, projectId: 1, name: 'Payment integration', status: 'in-progress', date: '2026-02-25' },
+    { id: 7, projectId: 1, name: 'Order management', status: 'in-progress', date: '2026-03-01' },
+    { id: 8, projectId: 1, name: 'Admin panel', status: 'pending', date: null },
+    { id: 9, projectId: 1, name: 'Performance optimization', status: 'pending', date: null },
+    { id: 10, projectId: 1, name: 'Security audit', status: 'pending', date: null },
+    { id: 11, projectId: 2, name: 'Data collection pipeline', status: 'completed', date: '2026-02-10' },
+    { id: 12, projectId: 2, name: 'Feature engineering', status: 'completed', date: '2026-02-20' },
+    { id: 13, projectId: 2, name: 'Model training v1', status: 'completed', date: '2026-03-01' },
+    { id: 14, projectId: 2, name: 'Model optimization', status: 'in-progress', date: '2026-03-05' },
+    { id: 15, projectId: 2, name: 'API endpoints', status: 'pending', date: null },
+    { id: 16, projectId: 2, name: 'Real-time predictions', status: 'pending', date: null },
+];
+
+export const mockProgressData = [
+    { week: 'W1', tasksCompleted: 3, hoursWorked: 32, milestones: 1 },
+    { week: 'W2', tasksCompleted: 2, hoursWorked: 28, milestones: 0 },
+    { week: 'W3', tasksCompleted: 4, hoursWorked: 36, milestones: 1 },
+    { week: 'W4', tasksCompleted: 3, hoursWorked: 30, milestones: 1 },
+    { week: 'W5', tasksCompleted: 5, hoursWorked: 40, milestones: 2 },
+    { week: 'W6', tasksCompleted: 2, hoursWorked: 24, milestones: 0 },
+    { week: 'W7', tasksCompleted: 4, hoursWorked: 35, milestones: 1 },
+    { week: 'W8', tasksCompleted: 3, hoursWorked: 32, milestones: 1 },
+];
+
+export const mockTaskDistribution = [
+    { name: 'Frontend', value: 35, color: '#2563EB' },
+    { name: 'Backend', value: 25, color: '#06B6D4' },
+    { name: 'Database', value: 15, color: '#8B5CF6' },
+    { name: 'Testing', value: 15, color: '#10B981' },
+    { name: 'DevOps', value: 10, color: '#F59E0B' },
+];
+
+export const mockMLMetrics = [
+    { epoch: 1, accuracy: 0.65, loss: 0.82, valAccuracy: 0.60, valLoss: 0.90 },
+    { epoch: 2, accuracy: 0.72, loss: 0.68, valAccuracy: 0.68, valLoss: 0.75 },
+    { epoch: 3, accuracy: 0.78, loss: 0.55, valAccuracy: 0.74, valLoss: 0.62 },
+    { epoch: 4, accuracy: 0.83, loss: 0.42, valAccuracy: 0.79, valLoss: 0.51 },
+    { epoch: 5, accuracy: 0.86, loss: 0.35, valAccuracy: 0.83, valLoss: 0.44 },
+    { epoch: 6, accuracy: 0.88, loss: 0.30, valAccuracy: 0.85, valLoss: 0.39 },
+    { epoch: 7, accuracy: 0.89, loss: 0.27, valAccuracy: 0.86, valLoss: 0.36 },
+    { epoch: 8, accuracy: 0.91, loss: 0.24, valAccuracy: 0.87, valLoss: 0.34 },
+];
+
+export const mockDeliverables = [
+    { id: 1, projectId: 1, name: 'Frontend Source Code', type: 'source-code', size: '24.5 MB', version: 'v2.1', date: '2026-03-05', status: 'ready' },
+    { id: 2, projectId: 1, name: 'API Documentation', type: 'document', size: '2.3 MB', version: 'v1.4', date: '2026-03-04', status: 'ready' },
+    { id: 3, projectId: 1, name: 'Database Schema', type: 'document', size: '156 KB', version: 'v1.2', date: '2026-02-20', status: 'ready' },
+    { id: 4, projectId: 1, name: 'UI/UX Design Files', type: 'design', size: '48.7 MB', version: 'v3.0', date: '2026-02-10', status: 'ready' },
+    { id: 5, projectId: 2, name: 'ML Model (PyTorch)', type: 'model', size: '156 MB', version: 'v0.8', date: '2026-03-05', status: 'ready' },
+    { id: 6, projectId: 2, name: 'Training Notebook', type: 'document', size: '4.2 MB', version: 'v1.1', date: '2026-03-03', status: 'ready' },
+    { id: 7, projectId: 2, name: 'Data Pipeline Scripts', type: 'source-code', size: '890 KB', version: 'v1.0', date: '2026-02-28', status: 'ready' },
+    { id: 8, projectId: 3, name: 'Final Build', type: 'build', size: '12.4 MB', version: 'v1.0', date: '2026-02-28', status: 'ready' },
+    { id: 9, projectId: 3, name: 'Technical Docs', type: 'document', size: '3.1 MB', version: 'v1.0', date: '2026-02-28', status: 'ready' },
+];
+
+export const mockReports = [
+    {
+        id: 1,
+        projectId: 1,
+        title: 'Weekly Report — Mar 3-7, 2026',
+        date: '2026-03-07',
+        summary: 'Payment integration module 80% complete. Shopping cart fully functional with real-time updates.',
+        completedTasks: ['Payment gateway integration', 'Cart persistence', 'Checkout flow UI'],
+        pendingTasks: ['Stripe webhook handling', 'Order confirmation emails'],
+        issues: ['Minor CSS inconsistency on mobile checkout'],
+        nextMilestones: ['Complete payment module', 'Start order management'],
+    },
+    {
+        id: 2,
+        projectId: 1,
+        title: 'Weekly Report — Feb 24-28, 2026',
+        date: '2026-02-28',
+        summary: 'Shopping cart feature completed. Started payment integration research and implementation.',
+        completedTasks: ['Shopping cart UI', 'Cart state management', 'Product filtering'],
+        pendingTasks: ['Payment integration', 'Order management'],
+        issues: [],
+        nextMilestones: ['Payment integration', 'Admin panel prototype'],
+    },
+    {
+        id: 3,
+        projectId: 2,
+        title: 'ML Progress Report — Mar 3-7, 2026',
+        date: '2026-03-07',
+        summary: 'Model training v1 complete with 89% accuracy. Optimization phase started.',
+        completedTasks: ['Model architecture finalized', 'Training pipeline automated', 'Baseline metrics established'],
+        pendingTasks: ['Hyperparameter tuning', 'Model compression'],
+        issues: ['Training data imbalance in category C'],
+        nextMilestones: ['Achieve 92% target accuracy', 'Build prediction API'],
+    },
+];
+
+export const mockMessages = [
+    { id: 1, projectId: 1, senderId: 1, senderName: 'Alex Morgan', senderRole: 'admin', message: 'Hi Sarah! The shopping cart module is now fully functional. I\'ve pushed the latest build for your review.', timestamp: '2026-03-06T14:30:00', read: true },
+    { id: 2, projectId: 1, senderId: 2, senderName: 'Sarah Chen', senderRole: 'client', message: 'That\'s great news! I tested the cart and it works smoothly. One question — can we add a wishlist feature?', timestamp: '2026-03-06T15:45:00', read: true },
+    { id: 3, projectId: 1, senderId: 1, senderName: 'Alex Morgan', senderRole: 'admin', message: 'Absolutely! I\'ll add it to the backlog. It would fit nicely in the next sprint after payment integration is done.', timestamp: '2026-03-06T16:10:00', read: true },
+    { id: 4, projectId: 1, senderId: 2, senderName: 'Sarah Chen', senderRole: 'client', message: 'Perfect. Also, the new product page designs look amazing. Very clean and modern. 👏', timestamp: '2026-03-06T16:30:00', read: false },
+    { id: 5, projectId: 2, senderId: 1, senderName: 'Alex Morgan', senderRole: 'admin', message: 'The recommendation model hit 89% accuracy on the validation set! Here\'s the training report.', timestamp: '2026-03-05T10:00:00', read: true },
+    { id: 6, projectId: 2, senderId: 2, senderName: 'Sarah Chen', senderRole: 'client', message: 'Impressive! What\'s the plan to reach the 92% target?', timestamp: '2026-03-05T11:20:00', read: true },
+    { id: 7, projectId: 2, senderId: 1, senderName: 'Alex Morgan', senderRole: 'admin', message: 'I\'m going to implement attention mechanisms and augment the training data. Should get us there within 2 weeks.', timestamp: '2026-03-05T11:45:00', read: true },
+];
+
+export const mockActivities = [
+    { id: 1, projectId: 1, type: 'update', message: 'Payment integration module started', timestamp: '2026-03-06T14:00:00', icon: 'code' },
+    { id: 2, projectId: 1, type: 'deliverable', message: 'Frontend Source Code v2.1 uploaded', timestamp: '2026-03-05T16:30:00', icon: 'upload' },
+    { id: 3, projectId: 1, type: 'milestone', message: 'Shopping cart feature completed', timestamp: '2026-03-04T12:00:00', icon: 'check-circle' },
+    { id: 4, projectId: 1, type: 'report', message: 'Weekly report generated', timestamp: '2026-03-03T09:00:00', icon: 'file-text' },
+    { id: 5, projectId: 2, type: 'update', message: 'Model training completed — 89% accuracy', timestamp: '2026-03-05T10:00:00', icon: 'brain' },
+    { id: 6, projectId: 2, type: 'deliverable', message: 'ML Model v0.8 uploaded', timestamp: '2026-03-05T09:30:00', icon: 'upload' },
+    { id: 7, projectId: 2, type: 'milestone', message: 'Data pipeline automation complete', timestamp: '2026-03-02T15:00:00', icon: 'check-circle' },
+    { id: 8, projectId: 1, type: 'message', message: 'New message from Alex Morgan', timestamp: '2026-03-06T16:10:00', icon: 'message-square' },
+    { id: 9, projectId: 1, type: 'update', message: 'Bug fixes applied to product catalog', timestamp: '2026-03-02T11:00:00', icon: 'bug' },
+    { id: 10, projectId: 3, type: 'milestone', message: 'Dashboard Analytics Tool deployed to production', timestamp: '2026-02-28T14:00:00', icon: 'rocket' },
+    { id: 11, projectId: 1, type: 'update', message: 'Frontend module performance optimized', timestamp: '2026-03-01T10:00:00', icon: 'zap' },
+    { id: 12, projectId: 2, type: 'update', message: 'Feature engineering pipeline completed', timestamp: '2026-02-28T16:00:00', icon: 'settings' },
+];
+
+export const mockNotifications = [
+    { id: 1, type: 'update', message: 'E-Commerce Platform progress updated to 68%', time: '2 hours ago', read: false },
+    { id: 2, type: 'deliverable', message: 'New deliverable: Frontend Source Code v2.1', time: '1 day ago', read: false },
+    { id: 3, type: 'message', message: 'New message from Alex Morgan', time: '1 day ago', read: false },
+    { id: 4, type: 'report', message: 'Weekly report available for E-Commerce Platform', time: '2 days ago', read: true },
+    { id: 5, type: 'milestone', message: 'Shopping cart feature completed!', time: '3 days ago', read: true },
+];
